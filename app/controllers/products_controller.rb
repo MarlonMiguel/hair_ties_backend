@@ -1,5 +1,12 @@
 class ProductsController < ApplicationController
+  before_action :authorize_admin, only: [:create, :update, :destroy]
   before_action :set_product, only: [:show, :update, :destroy]
+
+  def authorize_admin
+    unless @current_user&.admin?
+      render json: { error: "Acesso restrito ao administrador" }, status: :forbidden
+    end
+  end
 
   def index
     products = Product.all
