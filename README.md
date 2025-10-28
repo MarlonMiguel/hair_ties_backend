@@ -1,24 +1,62 @@
-# README
+# Hair Ties Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este é o backend do projeto **Hair Ties**, desenvolvido com Ruby on Rails. Ele fornece a API necessária para gerenciar os dados relacionados aos elásticos de cabelo.
 
-Things you may want to cover:
+## 🚀 Tecnologias
 
-* Ruby version
+* **Ruby on Rails**: Framework para desenvolvimento web.
+* **RSpec**: Framework para testes automatizados.
 
-* System dependencies
+## 🚸️ Instalação
 
-* Configuration
+1. Clone o repositório:
 
-* Database creation
+   ```bash
+   git clone https://github.com/MarlonMiguel/hair_ties_backend.git
+   cd hair_ties_backend
+   ```
 
-* Database initialization
+2. Instale as dependências:
 
-* How to run the test suite
+   ```bash
+   bundle install
+   ```
 
-* Services (job queues, cache servers, search engines, etc.)
+3. Configure o banco de dados:
 
-* Deployment instructions
+   ```bash
+   rails db:create
+   rails db:migrate
+   ```
 
-* ...
+4. Inicie o servidor:
+
+   ```bash
+   rails server
+   ```
+
+   O backend estará disponível em `http://localhost:3000`.
+
+## 🤚 Testes
+
+Para rodar os testes:
+
+```bash
+rspec
+```
+
+## 📜 Documentação da API
+
+A documentação da API está disponível em `http://localhost:3000/api-docs`.
+
+## 💌 Contribuindo
+
+1. Faça um fork do repositório.
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).
+3. Faça suas alterações e commit (`git commit -am 'Adiciona nova feature'`).
+4. Envie para o repositório remoto (`git push origin feature/nova-feature`).
+5. Abra um Pull Request.
+
+## 📜 Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
